@@ -1,0 +1,247 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+h1 {
+  font-size: 80px;
+  line-height: 90px;
+  font-family: Andale Mono, sans-serif;
+  width: 288px;
+  height: 180px;
+  display: block;
+  margin-top: 48px;
+  position: relative;
+}
+h1:after {
+  content: '';
+  width: 1200px;
+  position: absolute;
+  bottom: -19px;
+  height: 1px;
+  background: #000;
+  display: block;
+}
+h2 {
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: 500;
+  display: block;
+  position: relative;
+	border-bottom: 1px solid #000;
+	padding-bottom: 3px;
+}
+h2 span {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #A00404;
+  line-height: 45px;
+  display: inline-block;
+  margin-left: 16px;
+  font-family: Roboto, sans-serif;
+  vertical-align: top;
+  font-weight: 500;
+}
+.photo {
+  width: 324px;
+  height: 324px;
+  display: block;
+  margin-top: 72px;
+  margin-bottom: 48px;
+}
+ul {
+  margin-top: 24px;
+  padding-left: 48px;
+}
+ul li {
+  font-size: 24px;
+  line-height: 32px;
+}
+.dot {
+  position: relative;
+}
+.dot:after {
+  content: '';
+  position: absolute;
+  background: #96A9C4;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 10px;
+  left: -32px;
+}
+p {
+  font-size: 20px;
+  line-height: 30px;
+  height: 154px;
+  width: 642px;
+}
+.profile, .education,.skills-bg, .work-experience {
+  margin-bottom: 72px;
+}
+.profile ul li {
+  line-height: 35px;
+}
+.education ul li {
+  margin-bottom: 32px;
+}
+.line {
+  position: relative;
+}
+.line:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 66px;
+  display: block;
+  background: #96A9C4;
+  top: 16px;
+  left: -24px;
+}
+.skills-bg {
+  display: block;
+  width: 1200px;
+  height: 494px;
+  background: #415165;
+  text-align: center;
+  padding: 24px 0 56px 0;
+  position: relative;
+}
+.skills-bg::after {
+	content: "";
+	position: absolute;
+	background-color: #96A9C4;
+	z-index: -1;
+	height: 360px;
+	width: 100vw;
+	left: -120px;
+	top: 69px;
+}
+.skills-bg h2,
+.skills-bg span{
+  color: #fff;
+}
+.skills-bg h2{
+	width: 996px;
+	border-bottom: 1px solid white;
+	text-align: center;
+	margin: 0 auto 40px auto;
+}
+.skills-bg ul {
+  width: 216px;
+  margin: 0 auto; 
+	padding-left: 23px;
+	border-left: 1px solid #96A9C4;
+}
+.skills-bg ul li {
+	font-weight: 200;
+  margin-bottom: 16px;
+  color: #FFF;
+  text-align: left;
+}
+.work-experience img {
+  display: block;
+  margin: 8px 0;
+}
+.work-experience ul {
+  margin-left: 24px;
+	padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+  height: 647px;
+}
+.work-experience ul li {
+  margin-bottom: 32px;
+}
+footer {
+  background: #415165;
+  color: #fff;
+  text-align: center;
+  height: 400px;
+  padding-top: 24px;
+}
+footer h2, footer h2 span{
+  color: #fff;
+}
+footer h2 {
+  border-bottom: 1px solid #FFF;
+}
+footer ul li {
+  margin-bottom: 16px;
+}
+footer .image {
+  display: inline-block;
+  height: 48px;
+  margin-right: 24px;
+}
+footer .image:last-child {
+  margin-right: 0;
+}
+footer img {
+  display: block;
+}
