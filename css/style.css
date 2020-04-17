@@ -62,6 +62,7 @@ table {
 }
 body {
   font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+  line-height: 36px;
 }
 .wrap {
   max-width: 1200px;
@@ -72,22 +73,11 @@ h1 {
   font-size: 80px;
   line-height: 90px;
   font-family: Andale Mono, sans-serif;
-  width: 288px;
-  height: 180px;
   display: block;
   margin-top: 48px;
-  position: relative;
+  border-bottom: 2px solid #000;
 }
-h1:after {
-  content: '';
-  width: 1200px;
-  position: absolute;
-  bottom: -19px;
-  height: 1px;
-  background: #000;
-  display: block;
-}
-h2 {
+.title {
   font-size: 32px;
   line-height: 45px;
   font-weight: 500;
@@ -96,12 +86,11 @@ h2 {
 	border-bottom: 1px solid #000;
 	padding-bottom: 3px;
 }
-h2 span {
+.subtitle {
   text-transform: uppercase;
   font-size: 24px;
   color: #A00404;
   line-height: 45px;
-  display: inline-block;
   margin-left: 16px;
   font-family: Roboto, sans-serif;
   vertical-align: top;
@@ -111,7 +100,7 @@ h2 span {
   width: 324px;
   height: 324px;
   display: block;
-  margin-top: 72px;
+  margin-top: 48px;
   margin-bottom: 48px;
 }
 ul {
@@ -139,8 +128,6 @@ ul li {
 p {
   font-size: 20px;
   line-height: 30px;
-  height: 154px;
-  width: 642px;
 }
 .profile, .education,.skills-bg, .work-experience {
   margin-bottom: 72px;
@@ -183,11 +170,11 @@ p {
 	left: -120px;
 	top: 69px;
 }
-.skills-bg h2,
-.skills-bg span{
+.skills-bg .title,
+.skills-bg .subtitle {
   color: #fff;
 }
-.skills-bg h2{
+.skills-bg .title {
 	width: 996px;
 	border-bottom: 1px solid white;
 	text-align: center;
@@ -225,14 +212,18 @@ footer {
   height: 400px;
   padding-top: 24px;
 }
-footer h2, footer h2 span{
+footer .title, footer .subtitle{
   color: #fff;
 }
-footer h2 {
+footer .title {
   border-bottom: 1px solid #FFF;
 }
 footer ul li {
   margin-bottom: 16px;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
 }
 footer .image {
   display: inline-block;
